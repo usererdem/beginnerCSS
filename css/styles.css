@@ -1,4 +1,5 @@
 body {
+  color: #40514E;
   margin: 0;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -87,8 +88,16 @@ hr {
 .footer-link {
   text-decoration: none;
   color: #11999e;
+  display: inline-block;
   font-size: 1.4rem;
-  padding: 30px;
+  padding: 20px;
+  transition: all .3s;
+  margin: auto 10px auto 10px;
+}
+
+.footer-link:hover {
+  background-color: #68c5c5;
+  transform: translateY(-5px);
 }
 
 .skill-row {

@@ -1,32 +1,48 @@
 body {
   margin: 0;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 200%;
 }
 
 h1 {
-  margin-top: 0px;
-  font-family: 'Lato', sans-serif;
+  color: #66bfbf;
+  font-family: "Lato", sans-serif;
+  font-size: 5.625rem;
+  margin: 50px auto 0 auto;
 }
 
 h2 {
+  color: #66bfbf;
   font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
 }
 
 h3 {
+  color: #11999e;
+  font-size: 2rem;
   font-family: "Montserrat", sans-serif;
+}
+
+hr {
+  background-color: transparent;
+  width: 5%;
+  border-color: grey;
+  opacity: 0.3;
+  border-width: 10px;
+  border-style: dotted none none;
+  margin-bottom: 70px;
 }
 
 .top-container {
   background-color: #e4f4f5;
   position: relative;
-  padding: 100px;
+  padding-top: 100px;
 }
 
-.middle-container {
-}
-
-.bottom-container {
+.mountain {
+  position: relative;
+  top: 5px;
 }
 
 .web {
@@ -35,16 +51,133 @@ h3 {
 
 .top-cloud {
   position: absolute;
-  right: 680px;
+  right: 400px;
   top: 50px;
 }
 
 .bottom-cloud {
   position: absolute;
-  bottom: 380px;
-  left: 700px;
+  bottom: 300px;
+  left: 400px;
 }
 
-.skill-image {
-    height: 100px;
+.html-image {
+  width: 20%;
+  float: left;
+  margin-right: 30px;
+  margin-top: 15px;
+}
+
+.profile-image {
+  height: 230px;
+  padding-top: 50px;
+}
+.css-image {
+  width: 20%;
+  float: right;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.profile p {
+  width: 30%;
+  margin: auto auto 70px auto;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #11999e;
+  font-size: 1.4rem;
+  padding: 30px;
+}
+
+.skill-row {
+  margin: 100px auto;
+  width: 50%;
+  text-align: left;
+  line-height: 2;
+}
+
+.skill-row p {
+  font-size: 1.3rem;
+  overflow: auto;
+}
+
+.js-image {
+  position: relative;
+  right: 100px;
+  float: left;
+  margin-right: -80px;
+}
+
+.js-image-text {
+  position: relative;
+}
+
+.contact-me {
+  width: 30%;
+  margin: auto;
+  line-height: 2;
+}
+
+.contact-me h3 {
+  font-size: 1.5rem;
+}
+
+.contact-me p {
+  font-size: 1.3rem;
+}
+
+.bottom-container {
+  background-color: #66bfbf;
+  padding: 40px;
+}
+
+.bottom-container p {
+  color: #eaf6f6;
+}
+
+.btn {
+  margin: 2.5rem;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.btn:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #66bfbf;
+  border-radius: 10rem;
+  z-index: -2;
+}
+.btn:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #088bac;
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+.btn:hover {
+  color: #fff;
+}
+.btn:hover:before {
+  width: 100%;
 }
